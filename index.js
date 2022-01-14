@@ -26,15 +26,15 @@ function setTime(){
     let h3=document.getElementById("nap-time").value;
     let hh=new Date().getHours();
     if(h1==hh){
-        document.getElementById("pic-container").style.backgroundImage="url(./assets/wakeup_image.svg)";
+        document.getElementById("pic-container").style.backgroundImage="url(./assets/morning.png)";
         document.getElementById("text").innerHTML="Wake up";
     }
     if(h2==hh){
-        document.getElementById("pic-container").style.backgroundImage="url(./assets/lunch_image.svg)";
+        document.getElementById("pic-container").style.backgroundImage="url(./assets/noon.png)";
         document.getElementById("text").innerHTML="Let's Have some Lunch";
     }
     if(h3==hh){
-        document.getElementById("pic-container").style.backgroundImage="url(./assets/goodnight_image.svg)";
+        document.getElementById("pic-container").style.backgroundImage="url(./assets/night.png)";
         document.getElementById("text").innerHTML="Good night";
     }
     function displayvalue(){
