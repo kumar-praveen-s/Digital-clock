@@ -196,7 +196,7 @@ label{
     width: 500px;
     background-color: cadetblue;
     position: absolute;
-    bottom: 40px;
+    top: 80%;
     left: 10%;
 }
 #pic-text-container{
