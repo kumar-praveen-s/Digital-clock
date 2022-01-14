@@ -201,7 +201,7 @@ label{
 }
 #pic-text-container{
     width: 600px;
-    height: 500px;
+    height: 400px;
     position: absolute;
     left: 50%;
     top: 230px;
@@ -213,10 +213,10 @@ label{
     text-align: center;
 }
 #pic-container{
-    height: 400px;
+    height: 300px;
     width: 100%;
     background-image: url(./Assets/balloon_image.svg);
-    background-size: 600px 400px;
+    background-size: 600px 300px;
 }
 #button-container{
     width: 100%;
