@@ -194,7 +194,6 @@ label{
 }
 #option-select-view-container{
     width: 500px;
-    background-color: cadetblue;
     position: absolute;
     top: 80%;
     left: 10%;
@@ -241,7 +240,7 @@ label{
     color: azure;
     transform: scale(0.75,0.75);
 }
-.style-p1{
+#style-p1,#style-p2,#style-p3{
     color: #FFFFFF;
     font-size: 20px;
     padding: 8px;

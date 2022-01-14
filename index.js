@@ -37,38 +37,37 @@ function setTime(){
         document.getElementById("pic-container").style.backgroundImage="url(./image/3.png)";
         document.getElementById("text").innerHTML="Good night";
     }
-    displayvalue(h1,h2,h3);
+    displayvalue1(h1);
+    displayvalue2(h2);
+    displayvalue3(h3);
 }
-function displayvalue(h1,h2,h3){
-    let v1=document.getElementById("Wake-up-time").options[document.getElementById("Wake-up-time").selectedIndex].text;
-    let v2=document.getElementById("lunch-time").options[document.getElementById("lunch-time").selectedIndex].text;
-    let v3=document.getElementById("nap-time").options[document.getElementById("nap-time").selectedIndex].text;
-    let newElement1=document.createElement("p");
-    let newElement2=document.createElement("p");
-    let newElement3=document.createElement("p");
-    let pd=document.getElementById("option-select-view-container");
-    newElement1.setAttribute("class","style-p1");
-    newElement2.setAttribute("class","style-p1");
-    newElement3.setAttribute("class","style-p1");
-    if(h1=='none'){
-        newElement1.innerHTML="";
+function displayvalue1(h1){
+    let i1=document.getElementById("Wake-up-time");
+    let v1=i1.options[i1.selectedIndex].text;
+    if(h1=="none"){
+        document.getElementById("style-p1").innerHTML="";
     }
     else{
-        newElement1.innerHTML="Wake up Time : "+ v1;
-        pd.appendChild(newElement1);
+        document.getElementById("style-p1").innerHTML="Wake up Time : "+ v1;
     }
-    if(h2=='none'){
-        newElement2.innerHTML="";
-    }
-    else{
-        newElement2.innerHTML="Lunch Time : "+ v2;
-        pd.appendChild(newElement2);
-    }
-    if(h3=='none'){
-        newElement3.innerHTML="";
+}
+function displayvalue2(h2){
+    let i1=document.getElementById("lunch-time");
+    let v1=i1.options[i1.selectedIndex].text;
+    if(h2=="none"){
+        document.getElementById("style-p2").innerHTML="";
     }
     else{
-        newElement3.innerHTML="Nap Time : "+ v3;
-        pd.appendChild(newElement3);
+        document.getElementById("style-p2").innerHTML="Lunch Time : "+ v1;
+    }
+}
+function displayvalue3(h3){
+    let i1=document.getElementById("nap-time");
+    let v1=i1.options[i1.selectedIndex].text;
+    if(h3=="none"){
+        document.getElementById("style-p3").innerHTML="";
+    }
+    else{
+        document.getElementById("style-p3").innerHTML="nap Time : "+ v1;
     }
 }
